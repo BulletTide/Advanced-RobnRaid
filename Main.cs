@@ -34,7 +34,7 @@ namespace RobnRaid
             Instance = this;
 
             color = UnturnedChat.GetColorFromName(Configuration.Instance.Color, Color.green);
-            Rocket.Core.Logging.Logger.LogWarning("RobnRaid by Bullet_Tide has been loaded!");
+            Rocket.Core.Logging.Logger.LogWarning("RobnRaid by Bullet_Tide & persiafighter has been loaded!");
         }
 
         protected override void Unload()
