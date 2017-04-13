@@ -23,6 +23,11 @@ namespace RobnRaid.Commands
             get { return "Command to finish raiding!"; }
         }
 
+        public string Syntax
+        {
+            get { return ""; }
+        }
+
         public List<string> Aliases
         {
             get { return new List<string>(); }
@@ -48,14 +53,6 @@ namespace RobnRaid.Commands
                 {
                     "raidover"
                 };
-            }
-        }
-
-        public string Syntax
-        {
-            get
-            {
-                throw new NotImplementedException();
             }
         }
     }
