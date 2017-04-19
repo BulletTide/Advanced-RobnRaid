@@ -8,7 +8,6 @@ namespace RobnRaid
     public class RobnRaid : RocketPlugin<Configuration>
     {
         public static RobnRaid Instance;
-        public Color color;
 
         public override TranslationList DefaultTranslations
         {
@@ -16,6 +15,7 @@ namespace RobnRaid
             {
                 return new TranslationList()
                 {
+                    {"player_not_found","Player not found."},
                     { "rob_translation", "{0} is robbing {1} at {2}" },
                     { "raid_translation", "{0} is raiding a base at {1}" },
                     { "raid_usage", "Error: Try /raid <location>" },
@@ -33,7 +33,6 @@ namespace RobnRaid
         {
             Instance = this;
 
-            color = UnturnedChat.GetColorFromName(Configuration.Instance.Color, Color.green);
             Rocket.Core.Logging.Logger.LogWarning("RobnRaid by Bullet_Tide & persiafighter has been loaded!");
         }
 

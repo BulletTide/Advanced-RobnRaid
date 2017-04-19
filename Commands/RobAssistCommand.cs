@@ -2,6 +2,7 @@
 using Rocket.Unturned.Chat;
 using Rocket.Unturned.Player;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace RobnRaid.Commands
 {
@@ -42,7 +43,7 @@ namespace RobnRaid.Commands
                     UnturnedPlayer Target = UnturnedPlayer.FromName(command[0]);
                     if (Target != null)
                     {
-                        UnturnedChat.Say(RobnRaid.Instance.Translate("rob_assist_translation", player.DisplayName, Target.DisplayName, command[0]), RobnRaid.Instance.color);
+                        UnturnedChat.Say(RobnRaid.Instance.Translate("rob_assist_translation", player.DisplayName, Target.DisplayName, command[0]), UnturnedChat.GetColorFromName(RobnRaid.Instance.Configuration.Instance.RobAssistMessageColor, Color.magenta));
                     }
                 }
                 else

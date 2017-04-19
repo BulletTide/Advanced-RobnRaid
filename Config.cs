@@ -4,11 +4,20 @@ namespace RobnRaid
 {
     public class Configuration : IRocketPluginConfiguration
     {
-        public string Color;
+        public string RobMessageColor;
+        public string RobOverMessageColor;
+        public string RobAssistMessageColor;
+        public string RaidMessageColor;
+        public string RaidOverMessageColor;
 
         public void LoadDefaults()
         {
-            Color = "Green";
+            RobMessageColor = "Red";
+            RobOverMessageColor = "Blue";
+            RobAssistMessageColor = "Magenta";
+            RaidMessageColor = "Red";
+            RaidOverMessageColor = "Blue";
+
         }
     }
 }
