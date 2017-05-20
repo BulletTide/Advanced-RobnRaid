@@ -61,8 +61,6 @@ namespace RobnRaid.Commands
                 }
             }
         }
-    }
-}
 
     public List<string> Permissions
         {
