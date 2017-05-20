@@ -1,7 +1,5 @@
 ﻿using Rocket.API.Collections;
 using Rocket.Core.Plugins;
-using Rocket.Unturned.Chat;
-using UnityEngine;
 
 namespace RobnRaid
 {
@@ -15,7 +13,7 @@ namespace RobnRaid
             {
                 return new TranslationList()
                 {
-                    {"player_not_found","Player not found."},
+                    { "player_not_found","Player not found." },
                     { "rob_translation", "{0} is robbing {1} at {2}" },
                     { "raid_translation", "{0} is raiding a base at {1}" },
                     { "raid_usage", "Error: Try /raid <location>" },

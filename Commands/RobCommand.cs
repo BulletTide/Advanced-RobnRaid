@@ -43,12 +43,16 @@ namespace RobnRaid.Commands
                     UnturnedPlayer Target = UnturnedPlayer.FromName(command[0]);
                     if (Target != null)
                     {
-                        if (UnityEngine.Vector3.Distance(Target.Position, player.Position) > RobnRaid.Instance.Configuration.Instance.MaxRobDistance)
+                        if (UnityEngine.Vector3.Distance(Target.Position, player.Position) > RobnRaid.Instance.Configuration.Instance.MaxRobDistanceInMetres)
                         {
                             UnturnedChat.Say(player, RobnRaid.Instance.Translate("rob_too_far", Target.DisplayName));
                             return;
                         }
                         UnturnedChat.Say(RobnRaid.Instance.Translate("rob_translation", player.DisplayName, Target.DisplayName, command[1]), UnturnedChat.GetColorFromName(RobnRaid.Instance.Configuration.Instance.RobMessageColor, Color.red));
+                    }
+                    else
+                    {
+                        UnturnedChat.Say(caller, RobnRaid.Instance.Translate("player_not_found"));
                     }
                 }
                 else

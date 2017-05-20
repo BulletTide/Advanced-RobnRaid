@@ -45,6 +45,10 @@ namespace RobnRaid.Commands
                     {
                         UnturnedChat.Say(RobnRaid.Instance.Translate("rob_assist_translation", player.DisplayName, Target.DisplayName, command[0]), UnturnedChat.GetColorFromName(RobnRaid.Instance.Configuration.Instance.RobAssistMessageColor, Color.magenta));
                     }
+                    else
+                    {
+                        UnturnedChat.Say(caller, RobnRaid.Instance.Translate("player_not_found"));
+                    }
                 }
                 else
                 {
