@@ -21,10 +21,11 @@ namespace RobnRaid
                     { "raid_usage", "Error: Try /raid <location>" },
                     { "rob_usage", "Error: Try /rob <player> <location>" },
                     { "rob_over_translation", "{0} has finished robbing {1}" },
+                    { "rob_too_far", "Error: You're too far from the player" },
                     { "rob_over_usage", "Error: Try /robover <player>" },
                     { "raid_over_translation", "{0} has finished raiding!" },
                     { "rob_assist_usage", "Error: Try /robassist <robber>" },
-                    { "rob_assist_translation", "{0} is assisting {1} in a robbery!" },
+                    { "rob_assist_translation", "{0} is assisting {1} in a robbery!" }
                 };
             }
         }
