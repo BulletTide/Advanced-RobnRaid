@@ -14,12 +14,13 @@ namespace RobnRaid
                 return new TranslationList()
                 {
                     { "player_not_found","Error: Player not found." },
-                    { "rob_translation", "{0} is robbing {1} at {2}" },
-                    { "raid_translation", "{0} is raiding a base at {1}" },
+                    { "rob_translation", "{0} is robbing {1} at {2}!" },
+                    { "raid_translation", "{0} is raiding a base at {1}!" },
                     { "raid_usage", "Error: Try /raid <location>" },
                     { "rob_usage", "Error: Try /rob <player> <location>" },
-                    { "rob_over_translation", "{0} has finished robbing {1}" },
-                    { "rob_too_far", "Error: You're too far from the player" },
+                    { "rob_over_translation", "{0} has finished robbing {1}!" },
+                    { "rob_too_far", "Error: You're too far from the player!" },
+                    { "robassist_too_far", "Error: You're too far from the robber!" },
                     { "rob_over_usage", "Error: Try /robover <player>" },
                     { "raid_over_translation", "{0} has finished raiding!" },
                     { "rob_assist_usage", "Error: Try /robassist <robber>" },
