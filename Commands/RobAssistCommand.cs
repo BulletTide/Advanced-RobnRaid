@@ -43,7 +43,7 @@ namespace RobnRaid.Commands
                     UnturnedPlayer Target = UnturnedPlayer.FromName(command[0]);
                     if (Target != null)
                     {
-                        if (UnityEngine.Vector3.Distance(Target.Position, player.Position) > RobnRaid.Instance.Configuration.Instance.MaxRobDistanceInMetres)
+                        if (UnityEngine.Vector3.Distance(Target.Position, player.Position) > RobnRaid.Instance.Configuration.Instance.MaxRobAssistDistanceInMetres)
                         {
                             UnturnedChat.Say(player, RobnRaid.Instance.Translate("robassist_too_far", Target.DisplayName));
                             return;
