@@ -25,7 +25,7 @@ namespace RobnRaid.Commands
 
         public string Syntax
         {
-            get { return "<name> <location>"; }
+            get { return "/rob <name> <location>"; }
         }
 
         public List<string> Aliases
