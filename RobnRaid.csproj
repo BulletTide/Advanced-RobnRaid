@@ -57,6 +57,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\RaidAssistCommand.cs" />
     <Compile Include="Commands\RaidOverCommand.cs" />
     <Compile Include="Commands\RobAssistCommand.cs" />
     <Compile Include="Commands\RobOverCommand.cs" />

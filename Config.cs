@@ -9,9 +9,11 @@ namespace RobnRaid
         public string RobOverMessageColor;
         public string RobAssistMessageColor;
         public string RaidMessageColor;
+        public string RaidAssistMessageColor;
         public string RaidOverMessageColor;
         public uint MaxRobDistanceInMetres;
         public uint MaxRobAssistDistanceInMetres;
+        public uint MaxRaidAssistDistanceInMetres;
 
         public void LoadDefaults()
         {
@@ -20,9 +22,11 @@ namespace RobnRaid
             RobOverMessageColor = "Blue";
             RobAssistMessageColor = "Magenta";
             RaidMessageColor = "Red";
+            RaidAssistMessageColor = "Magenta";
             RaidOverMessageColor = "Blue";
             MaxRobDistanceInMetres = 5;
             MaxRobAssistDistanceInMetres = 5;
+            MaxRaidAssistDistanceInMetres = 5;
 
         }
     }
